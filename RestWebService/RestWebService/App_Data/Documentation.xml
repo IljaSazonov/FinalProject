@@ -511,6 +511,26 @@
             </summary>
             <param name="id">Id of an animal</param>
         </member>
+        <member name="T:RestWebService.Database.DbConnection">
+            <summary>
+            Database connection class
+            </summary>
+        </member>
+        <member name="P:RestWebService.Database.DbConnection.Con">
+            <summary>
+            Database connection
+            </summary>
+        </member>
+        <member name="M:RestWebService.Database.DbConnection.Connect">
+            <summary>
+            Start connection to database
+            </summary>
+        </member>
+        <member name="M:RestWebService.Database.DbConnection.Disconnect">
+            <summary>
+            End connection to database
+            </summary>
+        </member>
         <member name="T:RestWebService.Models.AnimalInfo">
             <summary>
             Represents animal information.
