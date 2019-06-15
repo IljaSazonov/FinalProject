@@ -511,69 +511,6 @@
             </summary>
             <param name="id">Id of an animal</param>
         </member>
-        <member name="T:RestWebService.Database.DbConnection">
-            <summary>
-            Database connection class
-            </summary>
-        </member>
-        <member name="P:RestWebService.Database.DbConnection.Con">
-            <summary>
-            Database connection
-            </summary>
-        </member>
-        <member name="M:RestWebService.Database.DbConnection.Connect">
-            <summary>
-            Start connection to database
-            </summary>
-        </member>
-        <member name="M:RestWebService.Database.DbConnection.Disconnect">
-            <summary>
-            End connection to database
-            </summary>
-        </member>
-<<<<<<< HEAD
-        <member name="P:RestWebService.Models.Animal.Id">
-            <summary>
-            Id from sql database.
-            </summary>
-        </member>
-        <member name="P:RestWebService.Models.Animal.Name">
-            <summary>
-            Animal's name.
-            </summary>
-        </member>
-        <member name="P:RestWebService.Models.Animal.Type">
-            <summary>
-            Animal's type.
-            </summary>
-        </member>
-        <member name="P:RestWebService.Models.Animal.Age">
-            <summary>
-            Animal's age.
-            </summary>
-        </member>
-        <member name="P:RestWebService.Models.Animal.Gender">
-            <summary>
-            Animals' gender.
-            </summary>
-        </member>
-        <member name="P:RestWebService.Models.Animal.Sterilization">
-            <summary>
-            Sterilization.
-            </summary>
-        </member>
-        <member name="P:RestWebService.Models.Animal.Breed">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:RestWebService.Models.Animal.Description">
-            <summary>
-            
-            </summary>
-        </member>
-=======
->>>>>>> d7ca6b7d1979570cb972d99397888e85fe5b8ac9
         <member name="T:RestWebService.Models.AnimalInfo">
             <summary>
             Represents animal information.
