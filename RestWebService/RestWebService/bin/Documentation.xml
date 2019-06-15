@@ -481,36 +481,6 @@
             </summary>
             <param name="documentPath">The physical path to XML document.</param>
         </member>
-        <member name="T:RestWebService.Controllers.AnimalController">
-            <summary>
-            Information about all animals.
-            </summary>
-        </member>
-        <member name="M:RestWebService.Controllers.AnimalController.Get">
-            <summary>
-            List containing all animals.
-            </summary>
-            <returns> animal list </returns>
-        </member>
-        <member name="M:RestWebService.Controllers.AnimalController.Get(System.Int32)">
-            <summary>
-            Finds animal by his id.
-            </summary>
-            <param name="id">Id of an animal</param>
-            <returns>Animal with an specific id</returns>
-        </member>
-        <member name="M:RestWebService.Controllers.AnimalController.Post(RestWebService.Models.AnimalInfo)">
-            <summary>
-            Add new animal entry to list.
-            </summary>
-            <param name="val">Animal list</param>
-        </member>
-        <member name="M:RestWebService.Controllers.AnimalController.Delete(System.Int32)">
-            <summary>
-            Deletes animal from the list.
-            </summary>
-            <param name="id">Id of an animal</param>
-        </member>
         <member name="T:RestWebService.Models.AnimalInfo">
             <summary>
             Represents animal information.
