@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RestWebService.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -10,30 +11,37 @@ namespace RestWebService.Controllers
     public class AnimalController : ApiController
     {
         // GET: api/Animal
-        public IEnumerable<string> Get()
+        public IEnumerable<AnimalInfo> Get()
         {
-            return new string[] { "value1", "value2" };
+            var animalInfoList = new List<AnimalInfo>();
+            for (int i = 0; i <2; i++)
+            {
+                var AnimalInfo = new AnimalInfo
+                {
+                    Name = "Doggo",
+                    Age = 10,
+                    Gender = "Male",
+                    Type = "Dog",
+                    Sterilization = "asd"
+                };
+
+                animalInfoList.Add(AnimalInfo);
+            }
+            return animalInfoList;
         }
 
         // GET: api/Animal/5
-        public string Get(int id)
+        public AnimalInfo Get(int id)
         {
-            return "value";
+            return  new AnimalInfo
+            {
+                Name = "Doggo",
+                Age = 10,
+                Gender = "Male",
+                Type = "Dog",
+                Sterilization = "asd"
+            };
         }
 
-        // POST: api/Animal
-        public void Post([FromBody]string value)
-        {
-        }
-
-        // PUT: api/Animal/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE: api/Animal/5
-        public void Delete(int id)
-        {
-        }
     }
 }
