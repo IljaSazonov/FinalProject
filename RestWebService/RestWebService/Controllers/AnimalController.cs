@@ -10,37 +10,36 @@ namespace RestWebService.Controllers
 {
     public class AnimalController : ApiController
     {
-        // GET: api/Animal
-        public IEnumerable<AnimalInfo> Get()
-        {
-            var animalInfoList = new List<AnimalInfo>();
-            for (int i = 0; i <2; i++)
-            {
-                var AnimalInfo = new AnimalInfo
-                {
-                    Name = "Doggo",
-                    Age = 10,
-                    Gender = "Male",
-                    Type = "Dog",
-                    Sterilization = "asd"
-                };
+        List<AnimalInfo> animalList = new List<AnimalInfo>();
 
-                animalInfoList.Add(AnimalInfo);
-            }
-            return animalInfoList;
+        public AnimalController()
+        {
+            animalList.Add(new AnimalInfo { Id = 1, Age = 5, Gender = "Male", Name = "Doggo", Sterilization = "asd", Type = "Dog" });
+            animalList.Add(new AnimalInfo { Id = 2, Age = 3, Gender = "Female", Name = "Cattie", Sterilization = "asd", Type = "Cat" });
+        }
+
+        // GET: api/Animal
+        public List<AnimalInfo> Get()
+        {
+            return animalList;
         }
 
         // GET: api/Animal/5
         public AnimalInfo Get(int id)
         {
-            return  new AnimalInfo
-            {
-                Name = "Doggo",
-                Age = 10,
-                Gender = "Male",
-                Type = "Dog",
-                Sterilization = "asd"
-            };
+            return animalList.Where(x => x.Id == id).FirstOrDefault();
+        }
+
+        // POST: api/People
+        public void Post(AnimalInfo val)
+        {
+            animalList.Add(val);
+        }
+
+        // DELETE: api/Animal/5
+        public void Delete(int id)
+        {
+
         }
 
     }

@@ -9,6 +9,9 @@ namespace RestWebService.Models
     [DataContract]
     public class AnimalInfo
     {
+        [DataMember(Name = "id")]
+        public int Id { get; set; }
+
         [DataMember(Name = "name")]
         public string Name { get; set; }
 

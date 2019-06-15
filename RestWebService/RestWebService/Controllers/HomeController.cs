@@ -10,7 +10,7 @@ namespace RestWebService.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
+            ViewBag.Title = "Animal Database";
 
             return View();
         }
