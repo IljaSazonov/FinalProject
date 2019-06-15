@@ -531,6 +531,7 @@
             End connection to database
             </summary>
         </member>
+<<<<<<< HEAD
         <member name="P:RestWebService.Models.Animal.Id">
             <summary>
             Id from sql database.
@@ -571,6 +572,8 @@
             
             </summary>
         </member>
+=======
+>>>>>>> d7ca6b7d1979570cb972d99397888e85fe5b8ac9
         <member name="T:RestWebService.Models.AnimalInfo">
             <summary>
             Represents animal information.

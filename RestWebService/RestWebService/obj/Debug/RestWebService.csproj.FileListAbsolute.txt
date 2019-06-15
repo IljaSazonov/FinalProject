@@ -175,4 +175,17 @@ C:\Users\M\Documents\GitHub\FinalProject\RestWebService\RestWebService\obj\Debug
 C:\Users\M\Documents\GitHub\FinalProject\RestWebService\RestWebService\obj\Debug\RestWebService.csproj.CopyComplete
 C:\Users\M\Documents\GitHub\FinalProject\RestWebService\RestWebService\obj\Debug\RestWebService.dll
 C:\Users\M\Documents\GitHub\FinalProject\RestWebService\RestWebService\obj\Debug\RestWebService.pdb
+<<<<<<< HEAD
 C:\Users\M\Documents\GitHub\FinalProject\RestWebService\RestWebService\bin\Documentation.xml
+=======
+C:\Users\missi\OneDrive\Dokumentai\GitHub\FinalProject\RestWebService\RestWebService\bin\Documentation.xml
+C:\Users\missi\OneDrive\Dokumentai\GitHub\FinalProject\RestWebService\RestWebService\bin\EntityFramework.dll
+C:\Users\missi\OneDrive\Dokumentai\GitHub\FinalProject\RestWebService\RestWebService\bin\EntityFramework.SqlServer.dll
+C:\Users\missi\OneDrive\Dokumentai\GitHub\FinalProject\RestWebService\RestWebService\bin\System.Data.SQLite.dll
+C:\Users\missi\OneDrive\Dokumentai\GitHub\FinalProject\RestWebService\RestWebService\bin\System.Data.SQLite.EF6.dll
+C:\Users\missi\OneDrive\Dokumentai\GitHub\FinalProject\RestWebService\RestWebService\bin\System.Data.SQLite.Linq.dll
+C:\Users\missi\OneDrive\Dokumentai\GitHub\FinalProject\RestWebService\RestWebService\bin\EntityFramework.xml
+C:\Users\missi\OneDrive\Dokumentai\GitHub\FinalProject\RestWebService\RestWebService\bin\EntityFramework.SqlServer.xml
+C:\Users\missi\OneDrive\Dokumentai\GitHub\FinalProject\RestWebService\RestWebService\bin\System.Data.SQLite.xml
+C:\Users\missi\OneDrive\Dokumentai\GitHub\FinalProject\RestWebService\RestWebService\bin\System.Data.SQLite.dll.config
+>>>>>>> d7ca6b7d1979570cb972d99397888e85fe5b8ac9
