@@ -22,7 +22,7 @@ namespace RestWebService.Controllers
         {
             using (AnimalsDBEntities entities = new AnimalsDBEntities())
             {
-                var entity = entities.Animals.FirstOrDefault(e => e.ID ==id);
+                var entity = entities.Animals.FirstOrDefault(a => a.ID ==id);
                
                 if(entity != null)
                 {
@@ -50,6 +50,68 @@ namespace RestWebService.Controllers
                     return message;
                 }
 
+            }
+            catch(Exception e)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, e);
+            }
+        }
+
+        public HttpResponseMessage Delete(int id)
+        {
+            try
+            {
+                using (AnimalsDBEntities entities = new AnimalsDBEntities())
+                {
+                    var entity = entities.Animals.FirstOrDefault(a => a.ID == id);
+                    if (entity == null)
+                    {
+                        return Request.CreateErrorResponse(HttpStatusCode.NotFound, "Animal with ID " + id.ToString() + " not found to delete");
+                    }
+                    else
+                    {
+                        entities.Animals.Remove(entity);
+                        entities.SaveChanges();
+                        return Request.CreateResponse(HttpStatusCode.OK);
+                    }
+
+                }
+            }
+            catch (Exception e)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, e);
+            }
+        }
+
+        public HttpResponseMessage Put(int id,[FromBody]Animal animal)
+        {
+            try
+            {
+                using (AnimalsDBEntities entities = new AnimalsDBEntities())
+                {
+                    var entity = entities.Animals.FirstOrDefault(a => a.ID == id);
+
+                    if (entity == null)
+                    {
+                        return Request.CreateErrorResponse(HttpStatusCode.NotFound, "Animal with id " + id.ToString() + " not found to update");
+                    }
+                    else
+                    {
+                        entity.Type = animal.Type;
+                        entity.Breed = animal.Breed;
+                        entity.Gender = animal.Gender;
+                        entity.Age = animal.Age;
+                        entity.Name = animal.Name;
+                        entity.Description = animal.Description;
+                        entity.Sterilization = animal.Sterilization;
+
+                        entities.SaveChanges();
+                        return Request.CreateResponse(HttpStatusCode.OK, entity);
+                    }
+
+
+
+                }
             }
             catch(Exception e)
             {
