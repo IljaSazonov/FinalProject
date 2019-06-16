@@ -481,40 +481,5 @@
             </summary>
             <param name="documentPath">The physical path to XML document.</param>
         </member>
-        <member name="T:RestWebService.Models.AnimalInfo">
-            <summary>
-            Represents animal information.
-            </summary>
-        </member>
-        <member name="P:RestWebService.Models.AnimalInfo.Id">
-            <summary>
-            Id from sql database.
-            </summary>
-        </member>
-        <member name="P:RestWebService.Models.AnimalInfo.Name">
-            <summary>
-            Animal's name.
-            </summary>
-        </member>
-        <member name="P:RestWebService.Models.AnimalInfo.Type">
-            <summary>
-            Animal's type.
-            </summary>
-        </member>
-        <member name="P:RestWebService.Models.AnimalInfo.Age">
-            <summary>
-            Animal's age.
-            </summary>
-        </member>
-        <member name="P:RestWebService.Models.AnimalInfo.Gender">
-            <summary>
-            Animals' gender.
-            </summary>
-        </member>
-        <member name="P:RestWebService.Models.AnimalInfo.Sterilization">
-            <summary>
-            Sterilization.
-            </summary>
-        </member>
     </members>
 </doc>
