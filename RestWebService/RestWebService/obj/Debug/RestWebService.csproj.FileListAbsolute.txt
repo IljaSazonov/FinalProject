@@ -188,3 +188,7 @@ C:\Users\M\Documents\GitHub\FinalProject\RestWebService\RestWebService\bin\Syste
 C:\Users\M\Documents\GitHub\FinalProject\RestWebService\RestWebService\bin\Antlr3.Runtime.pdb
 C:\Users\M\Documents\GitHub\FinalProject\RestWebService\RestWebService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\M\Documents\GitHub\FinalProject\RestWebService\RestWebService\obj\Debug\RestWebService.csproj.CopyComplete
+C:\Users\missi\OneDrive\Dokumentai\GitHub\FinalProject\RestWebService\RestWebService\bin\DataAccess.dll
+C:\Users\missi\OneDrive\Dokumentai\GitHub\FinalProject\RestWebService\RestWebService\bin\DataAccess.pdb
+C:\Users\missi\OneDrive\Dokumentai\GitHub\FinalProject\RestWebService\RestWebService\bin\DataAccess.dll.config
+C:\Users\missi\OneDrive\Dokumentai\GitHub\FinalProject\RestWebService\RestWebService\obj\Debug\RestWebService.csprojAssemblyReference.cache
